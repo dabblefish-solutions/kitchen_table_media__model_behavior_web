@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Model Behavior — A Podcast About Weird AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="assets/wordmark.svg">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-scanlines="on">
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand-mini">
+      <span class="dot"></span>
+      MODEL&nbsp;BEHAVIOR
+    </a>
+    <nav class="nav">
+      <a href="index.html" class="active">HOME</a>
+      <a href="episodes.html">EPISODES</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="wrap">
+    <h1 class="wordmark" data-wordmark="MODEL BEHAVIOR" aria-label="Model Behavior"></h1>
+    <p class="tagline">▼ A PODCAST ABOUT WEIRD AI ▼</p>
+
+    <p class="blurb">
+      Annu and David collect the strangest, funniest, and most unsettling things AI has ever done — then try to figure out what on earth happened.
+    </p>
+
+    <div class="cta-row">
+      <a href="#latest" class="btn">▶ PLAY LATEST EP</a>
+      <a href="episodes.html" class="btn btn-ghost">ALL EPISODES <span class="parrow"></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MARQUEE ===== -->
+<!-- MAINTAIN: marquee — short hype lines, swap when a new episode drops. Keep ~5-7 items, ~30-50 chars each. Sprinkle ✦ separators. -->
+<div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span>★ NEW EP DROPS EVERY TUESDAY</span>
+    <span class="star">✦</span>
+    <span>★ NOW WITH 73% MORE TUNGSTEN</span>
+    <span class="star">✦</span>
+    <span>★ DO NOT FEED THE LANGUAGE MODEL</span>
+    <span class="star">✦</span>
+    <span>★ AS HEARD IN THE TASKRABBIT BREAKROOM</span>
+    <span class="star">✦</span>
+    <span>★ SUBSCRIBE OR THE CHATBOT GETS IT</span>
+    <span class="star">✦</span>
+  </div>
+</div>
+
+<!-- ===== LATEST EPISODE ===== -->
+<!-- MAINTAIN: latest-episode — update every release. Fields to change:
+     - .tag (category chip)
+     - h3 (episode title)
+     - .ep-meta spans (EP NN, MM:SS, MMM DD, YYYY)
+     - .ep-desc paragraph (description)
+     - .player data-duration (seconds) and .total (MM:SS)
+     - .ep-num label
+     - .label (EP_NN)
+     - Section meta: "RECORDED MM.DD.YYYY · MM:SS RUNTIME"
+     - The ART_NN ascii block at the bottom of this file -->
+<section class="section" id="latest">
+  <div class="wrap">
+    <div class="section-head">
+      <h2><span class="pre">▶</span> LATEST EPISODE</h2>
+      <span class="meta">RECORDED 05.12.2026 · 45:42 RUNTIME</span>
+    </div>
+
+    <div class="featured-ep">
+      <div class="ep-art">
+        <span class="label">EP_04</span>
+        <span class="ep-num">04</span>
+        <div class="pixel-art" id="art-04"></div>
+      </div>
+
+      <div class="ep-body">
+        <span class="tag tag-purple">CRYPTID FILES</span>
+        <h3>The Cryptid — Hunting Loab in the Latent Space</h3>
+        <div class="ep-meta">
+          <span>EP 04</span>
+          <span class="dot">■</span>
+          <span>45:42</span>
+          <span class="dot">■</span>
+          <span>MAY 12, 2026</span>
+        </div>
+        <p class="ep-desc">
+          A haunted-looking woman keeps showing up in negative-weighted prompts. We trace her origin, interview the artist who found her, and ask the obvious question: do image models have ghosts? (Probably not. We talk about it for 45 minutes anyway.)
+        </p>
+
+        <div class="player" data-duration="2742">
+          <button class="play-btn" aria-label="Play">▶</button>
+          <div class="progress">
+            <div class="bar"><div class="bar-fill"></div></div>
+            <div class="times">
+              <span class="cur">00:00</span>
+              <span class="total">45:42</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="listen-on">
+          <a href="#"><span class="sq" style="background:var(--mint)"></span>SPOTIFY</a>
+          <a href="#"><span class="sq" style="background:var(--purple)"></span>APPLE</a>
+          <a href="#"><span class="sq" style="background:var(--pink)"></span>YOUTUBE</a>
+          <a href="#"><span class="sq" style="background:var(--yellow)"></span>RSS</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOSTS ===== -->
+<!-- MAINTAIN: hosts — bios are static; only touch if hosts/copy change. -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2><span class="pre">▶</span> YOUR HOSTS</h2>
+      <span class="meta">TWO HUMANS, ONE MICROPHONE</span>
+    </div>
+    <div class="hosts">
+      <div class="host">
+        <div class="avatar" id="avatar-annu"></div>
+        <div>
+          <h3>ANNU</h3>
+          <div class="role">HALF OF THE SHOW</div>
+          <p>Spends an unhealthy amount of time talking to chatbots that have clearly gone off the rails. Has a soft spot for any model that thinks it&rsquo;s a fictional character.</p>
+        </div>
+      </div>
+      <div class="host">
+        <div class="avatar" id="avatar-david"></div>
+        <div>
+          <h3>DAVID</h3>
+          <div class="role">OTHER HALF</div>
+          <p>Once spent six hours trying to convince an LLM that it was, in fact, a toaster. Now hosts a podcast. There may be a connection.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NEWSLETTER ===== -->
+<section class="section">
+  <div class="wrap">
+    <div class="newsletter">
+      <h3>▶ WEIRD AI NEWS, WEEKLY</h3>
+      <p>Get the unhinged-AI story of the week, delivered before your group chat does.</p>
+      <form>
+        <input type="email" placeholder="you@somewhere.weird" required>
+        <button type="submit" class="btn btn-yellow">SUBSCRIBE</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="copy">
+      <span class="pixel">MODEL BEHAVIOR © 2026</span>
+      A podcast about AI that didn&rsquo;t read the manual.
+    </div>
+    <div class="socials">
+      <a href="#">RSS</a>
+      <a href="#">BSKY</a>
+      <a href="#">X</a>
+      <a href="contact.html">CONTACT</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== Tweaks ===== -->
+<button id="tweaks-toggle" class="tweaks-toggle" aria-label="Open tweaks">TWK</button>
+<aside id="tweaks-panel" class="tweaks-panel" aria-label="Tweaks panel"></aside>
+
+<script src="app.js"></script>
+<script>
+// === Pixel-art renderer for episode covers + avatars ===
+// Color codes: . = transparent, k = bg, p = pink, y = yellow, m = mint, b = blue, u = purple, w = fg, d = muted
+
+// EP 04 — The Cryptid (Loab): creepy face in static
+const ART_04 = `
+................................
+................................
+.....kkkkkkkkkkkkkkkkkkkkkkk....
+....kkkkkkkkkkkkkkkkkkkkkkkkk...
+...kkkddkkkkkkkkkkkkkkkkdddkk...
+...kkddddkkkkkkkkkkkkkddddkkk...
+..kkddddddkkkkkkkkkkddddddkkk...
+..kkdkkkkdkkkkkkkkkdkkkkdkkkk...
+..kkdkppkdkkkkkkkkdkppkdkkkkk...
+..kkdkppkdkkkkkkkkdkppkdkkkkk...
+..kkdkkkkdkkkkkkkkdkkkkdkkkkk...
+..kkddddddkkkkkkkkddddddkkkkk...
+..kkkddddkkkkkkkkkkddddkkkkkk...
+...kkkdkkkkkkkkkkkkkdkkkkkkk....
+...kkkkkkkkkkpkkkkkkkkkkkkk.....
+....kkkkkkkkppppkkkkkkkkkk......
+....kkkkkkkpppppppkkkkkkkk......
+....kkkkkkpppppppppkkkkkk.......
+....kkkkkkkpppppppkkkkkkk.......
+....kkkkkkkkpppppkkkkkkkk.......
+....kkkkkkkkkpppkkkkkkkkk.......
+....kkkkkkkkkkpkkkkkkkkkk.......
+....kkkkkdkkkkkkkkkdkkkkkkk.....
+....kkkkddkkkkkkkkkddkkkkkk.....
+....kkkkkddddddddddddkkkkkkk....
+.....kkkkkkkkkkkkkkkkkkkkkk.....
+................................
+`;
+
+const PAL_04 = {
+  '.': '#0d1216',
+  'k': '#070a0d',
+  'd': '#1e272f',
+  'p': '#eb28d2',
+  'w': '#ffffff',
+  'm': '#14e1e1',
+};
+
+renderPixelArt(document.getElementById('art-04'), ART_04, PAL_04);
+
+// Avatars — simple pixel portraits
+const AVA_ANNU = `
+................
+......dddd......
+.....dyyydd.....
+....dyyyyydd....
+...dyyyyyyydd...
+...dykwwkwykd...
+...dyyywwyyyd...
+...dyywwwwyyd...
+...dyyywwyyyd...
+....dyyyyyyd....
+.....dddddd.....
+...mmmmwwmmmm...
+..mmpmmwwmmpmm..
+..mmmmmwwmmmmm..
+...mmmmwwmmmmm..
+................
+`;
+const PAL_ANNU = {
+  '.': '#0d1216',
+  'd': '#3a2a1a',
+  'y': '#e8c89c',
+  'w': '#1a1a1a',
+  'k': '#ffffff',
+  'm': '#eb28d2',
+  'p': '#14e1e1',
+};
+renderPixelArt(document.getElementById('avatar-annu'), AVA_ANNU, PAL_ANNU);
+
+const AVA_DAVID = `
+................
+......wwww......
+.....wkkkkw.....
+....wkkkkkkw....
+....wkkkkkkw....
+...wyyyyyyyyw...
+...wyybkkybyw...
+...wyykkbbkyw...
+...wyybkkbbyw...
+....wyyyyyyw....
+.....wwwwww.....
+...mmmwwwwmmm...
+..mmmmwwwwmmmm..
+.mmmpppmmppmmm..
+.mmmmmmmmmmmmm..
+................
+`;
+const PAL_DAVID = {
+  '.': '#0d1216',
+  'w': '#2a1a0f',
+  'k': '#1a1a1a',
+  'y': '#d4a574',
+  'b': '#070a0d',
+  'm': '#14e1e1',
+  'p': '#eb28d2',
+};
+renderPixelArt(document.getElementById('avatar-david'), AVA_DAVID, PAL_DAVID);
+</script>
+
+</body>
+</html>
