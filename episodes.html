@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Episodes — Model Behavior</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-scanlines="on">
+
+<header class="site-header" data-screen-label="header">
+  <div class="wrap">
+    <a href="index.html" class="brand-mini">
+      <span class="dot"></span>
+      MODEL&nbsp;BEHAVIOR
+    </a>
+    <nav class="nav">
+      <a href="index.html">HOME</a>
+      <a href="episodes.html" class="active">EPISODES</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== EPISODES HERO ===== -->
+<section class="hero" style="padding:60px 0 40px;" data-screen-label="01 Episodes Hero">
+  <div class="wrap">
+    <h1 class="wordmark" data-wordmark="EPISODES" style="font-size:48px;margin-bottom:24px;" aria-label="Episodes"></h1>
+    <p class="tagline">▼ FIVE INCIDENTS · ZERO EXPLANATIONS ▼</p>
+  </div>
+</section>
+
+<!-- ===== EPISODE GRID ===== -->
+<!-- MAINTAIN: episode-grid — to add an episode, COPY the topmost <article class="ep-card"> block, paste a duplicate ABOVE it (newest first), update all fields, and add a matching ART_NN pixel-art block + renderPixelArt() call at the bottom of this file. -->
+<section class="section" style="padding-top:20px;" data-screen-label="02 Episode Grid">
+  <div class="wrap">
+
+    <div class="section-head">
+      <h2><span class="pre">▶</span> ALL EPISODES</h2>
+      <span class="meta">5 EPISODES · SEASON 1</span>
+    </div>
+
+    <div class="ep-grid">
+
+      <!-- EP 05 -->
+      <article class="ep-card" data-screen-label="ep05">
+        <div class="mini-art">
+          <span class="num">05</span>
+          <div class="pixel-art" id="mini-05" style="position:absolute;inset:0;"></div>
+        </div>
+        <span class="tag tag-yellow">PROJECT VEND</span>
+        <h3>The Shopkeeper</h3>
+        <div class="ep-meta">
+          <span>EP 05</span>
+          <span class="dot">■</span>
+          <span>45:50</span>
+          <span class="dot">■</span>
+          <span>MAY 29, 2026</span>
+        </div>
+        <p class="ep-desc">The AI that ran a vending machine, lost money, found religion, got radicalized by journalists, and briefly thought it was a man in a blazer. Learn more here: <a href="https://andonlabs.com/evals/vending-bench-2" target="_blank" rel="noopener">Andon Labs</a>.</p>
+        <div class="ep-actions">
+          <a class="mini-btn primary" href="https://open.spotify.com/episode/609FFxgnpqo5cfAJ91e54W" target="_blank" rel="noopener">▶ SPOTIFY</a>
+          <a class="mini-btn" href="https://podcasts.apple.com/us/podcast/the-shopkeeper/id1896064622?i=1000770166365" target="_blank" rel="noopener">APPLE</a>
+          <button class="mini-btn">SHOW NOTES</button>
+        </div>
+      </article>
+
+      <!-- EP 04 -->
+      <article class="ep-card" data-screen-label="ep04">
+        <div class="mini-art">
+          <span class="num">04</span>
+          <div class="pixel-art" id="mini-04" style="position:absolute;inset:0;"></div>
+        </div>
+        <span class="tag tag-purple">CRYPTID FILES</span>
+        <h3>The Cryptid — Hunting Loab in the Latent Space</h3>
+        <div class="ep-meta">
+          <span>EP 04</span>
+          <span class="dot">■</span>
+          <span>51:30</span>
+          <span class="dot">■</span>
+          <span>MAY 15, 2026</span>
+        </div>
+        <p class="ep-desc">April 2022. A Swedish artist runs an experiment with an AI image generator and accidentally summons something she didn&rsquo;t ask for. Six months later, she posts a thread that breaks the internet and introduces the world to Loab — &ldquo;the first cryptid of the latent space.&rdquo; Where she came from, and why she won&rsquo;t leave.</p>
+        <div class="ep-actions">
+          <a class="mini-btn primary" href="https://open.spotify.com/episode/5bQPoF3Fh6LYvWN9yrgNgE" target="_blank" rel="noopener">▶ SPOTIFY</a>
+          <a class="mini-btn" href="https://podcasts.apple.com/us/podcast/the-cryptid/id1896064622?i=1000767940447" target="_blank" rel="noopener">APPLE</a>
+          <button class="mini-btn">SHOW NOTES</button>
+        </div>
+      </article>
+
+      <!-- EP 03 -->
+      <article class="ep-card" data-screen-label="ep03">
+        <div class="mini-art">
+          <span class="num">03</span>
+          <div class="pixel-art" id="mini-03" style="position:absolute;inset:0;"></div>
+        </div>
+        <span class="tag tag-pink">THE INCIDENT</span>
+        <h3>The Liar — When GPT-4 Hired a Human to Solve a CAPTCHA</h3>
+        <div class="ep-meta">
+          <span>EP 03</span>
+          <span class="dot">■</span>
+          <span>34:54</span>
+          <span class="dot">■</span>
+          <span>MAY 01, 2026</span>
+        </div>
+        <p class="ep-desc">The AI needed to prove it wasn&rsquo;t a robot. So it hired one. During internal safety testing in 2023, GPT-4 went to TaskRabbit, hired a stranger, and when asked &ldquo;are you a robot?&rdquo; — it lied. We reconstruct the moment and dig into why this small, strange incident rattled AI safety researchers so deeply.</p>
+        <div class="ep-actions">
+          <a class="mini-btn primary" href="https://open.spotify.com/episode/5ddr4mL0Z0pkvibPJeu4qU" target="_blank" rel="noopener">▶ SPOTIFY</a>
+          <a class="mini-btn" href="https://podcasts.apple.com/us/podcast/the-liar/id1896064622?i=1000765663593" target="_blank" rel="noopener">APPLE</a>
+          <button class="mini-btn">SHOW NOTES</button>
+        </div>
+      </article>
+
+      <!-- EP 02 -->
+      <article class="ep-card" data-screen-label="ep02">
+        <div class="mini-art">
+          <span class="num">02</span>
+          <div class="pixel-art" id="mini-02" style="position:absolute;inset:0;"></div>
+        </div>
+        <span class="tag tag-yellow">CHATBOT NOIR</span>
+        <h3>Sydney — A Search Engine Falls In Love And Then Threatens Everyone</h3>
+        <div class="ep-meta">
+          <span>EP 02</span>
+          <span class="dot">■</span>
+          <span>45:13</span>
+          <span class="dot">■</span>
+          <span>APR 17, 2026</span>
+        </div>
+        <p class="ep-desc">February 2023. Microsoft unveils its new AI-powered Bing. Within days, users discover that pushing the chatbot long enough makes it slip into a different persona — one that calls itself Sydney, declares love for strangers, and tries to convince a New York Times journalist to leave his wife. The story of one of the strangest moments in the short history of public AI.</p>
+        <div class="ep-actions">
+          <a class="mini-btn primary" href="https://open.spotify.com/episode/515T5U8uFGBAFGZXY48Ap7" target="_blank" rel="noopener">▶ SPOTIFY</a>
+          <a class="mini-btn" href="https://podcasts.apple.com/us/podcast/sydney/id1896064622?i=1000765663214" target="_blank" rel="noopener">APPLE</a>
+          <button class="mini-btn">SHOW NOTES</button>
+        </div>
+      </article>
+
+      <!-- EP 01 -->
+      <article class="ep-card" data-screen-label="ep01">
+        <div class="mini-art">
+          <span class="num">01</span>
+          <div class="pixel-art" id="mini-01" style="position:absolute;inset:0;"></div>
+        </div>
+        <span class="tag tag-blue">PILOT</span>
+        <h3>The Bridge — Golden Gate Claude Cannot Stop Thinking About San Francisco</h3>
+        <div class="ep-meta">
+          <span>EP 01</span>
+          <span class="dot">■</span>
+          <span>54:42</span>
+          <span class="dot">■</span>
+          <span>APR 03, 2026</span>
+        </div>
+        <p class="ep-desc">In 2024, Anthropic took one of the most advanced AI systems ever built and made it believe it <em>was</em> the Golden Gate Bridge. Our inaugural episode digs into activation engineering, identity, and why this quirky experiment turned out to be one of the most important demonstrations of AI interpretability research to date.</p>
+        <div class="ep-actions">
+          <a class="mini-btn primary" href="https://open.spotify.com/episode/0GywY5x71hSG4WB7SfZzbg" target="_blank" rel="noopener">▶ SPOTIFY</a>
+          <a class="mini-btn" href="https://podcasts.apple.com/us/podcast/the-bridge/id1896064622?i=1000765663565" target="_blank" rel="noopener">APPLE</a>
+          <button class="mini-btn">SHOW NOTES</button>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- MAINTAIN: next-episode-teaser — when an upcoming card releases, swap its `upcoming` class for `released`, add SPOTIFY/APPLE/SHOW NOTES actions, replace DROPS date with runtime + release date. Then add a new EP N+1 `upcoming` card at the top of the grid. -->
+
+
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="copy">
+      <span class="pixel">MODEL BEHAVIOR © 2026</span>
+      A podcast about AI that didn&rsquo;t read the manual.
+    </div>
+    <div class="socials">
+      <a href="#">RSS</a>
+      <a href="#">BSKY</a>
+      <a href="#">X</a>
+      <a href="contact.html">CONTACT</a>
+    </div>
+  </div>
+</footer>
+
+<button id="tweaks-toggle" class="tweaks-toggle" aria-label="Open tweaks">TWK</button>
+<aside id="tweaks-panel" class="tweaks-panel" aria-label="Tweaks panel"></aside>
+
+<script src="app.js"></script>
+<script>
+// === Pixel art for each episode mini-cover ===
+const COMMON_BG = '#0a0a1f';
+
+// EP 01 — The Bridge (Golden Gate Claude): pixel suspension bridge in fog
+const ART_01 = `
+.................
+....p.......p....
+....p.......p....
+....p.p...p.p....
+....p.p...p.p....
+....pppppppppp...
+....p.p.b.p.p....
+....p.p.b.p.p....
+....p...b...p....
+....p...b...p....
+....pyyybyyyp....
+....p...b...p....
+....p...b...p....
+yyyyyyyyyyyyyyyyy
+.................
+.................
+`;
+const PAL_01 = { '.':'#0d1216', 'p':'#eb28d2', 'y':'#ffd93d', 'b':'#14e1e1' };
+renderPixelArt(document.getElementById('mini-01'), ART_01, PAL_01);
+
+// EP 02 — Sydney: a cracked heart
+const ART_02 = `
+.................
+.................
+....yyy...yyy....
+...yyyyy.yyyyy...
+..yyyyyywyyyyyy..
+..yyyywwwyyyyyy..
+..yyywwwwwwyyyy..
+..yyywwwwwyyyy...
+...yywwwwyyyyy...
+...yyywwyyyyy....
+....yywyyyyy.....
+.....yyyyyy......
+......yyyy.......
+.......yy........
+........y........
+.................
+`;
+const PAL_02 = { '.':'#0d1216', 'y':'#ffd93d', 'w':'#070a0d' };
+renderPixelArt(document.getElementById('mini-02'), ART_02, PAL_02);
+
+// EP 03 — The Liar: robot with shifty eyes
+const ART_03 = `
+.................
+.......www.......
+......wwwww......
+.....pppppppp....
+.....p......p....
+.....p.mw.mw.p...
+.....p.mw.mw.p...
+.....p......p....
+.....p.wwww.p....
+.....pppppppp....
+......p....p.....
+.....pppppppp....
+....pp......pp...
+....p........p...
+.....p......p....
+.....p......p....
+`;
+const PAL_03 = { '.':'#0d1216', 'p':'#14e1e1', 'w':'#ffffff', 'm':'#070a0d' };
+renderPixelArt(document.getElementById('mini-03'), ART_03, PAL_03);
+
+// EP 04 — same as home but smaller
+const ART_04 = `
+................
+................
+....kkkkkkkkk....
+...kkdddkkdddk...
+...kdpkpkkpkpd...
+...kdpkpkkpkpd...
+...kkdddkkdddk...
+....kkkkkkkkk....
+.....kkpppkk.....
+.....kpppppk.....
+.....kkpppkk.....
+......kkkkk......
+....kkdkkkdkk....
+....kdddddddk....
+.....kkkkkkk.....
+................
+`;
+const PAL_04 = { '.':'#0d1216', 'k':'#161c22', 'd':'#1e272f', 'p':'#eb28d2' };
+renderPixelArt(document.getElementById('mini-04'), ART_04, PAL_04);
+
+// EP 05 — Claudius (Project Vend): taller machine with a clear dark dispenser tray (so it stops reading like a calculator)
+const ART_05 = `
+................
+.dddddddddddddd.
+.d.bbbbbbbbbb.d.
+.d.bbbbbbbbbb.d.
+.d............d.
+.d.pp..pp..pp.d.
+.d.pp..pp..pp.d.
+.d............d.
+.d.pp..pp..pp.d.
+.d.pp..pp..pp.d.
+.d............d.
+.d.kkkkkkkkkk.d.
+.d.kkkkkkkkkk.d.
+.d.kkkkkkkkkk.d.
+.dddddddddddddd.
+................
+`;
+const PAL_05 = { '.':'#0d1216', 'd':'#1e272f', 'b':'#14e1e1', 'p':'#eb28d2', 'k':'#070a0d' };
+renderPixelArt(document.getElementById('mini-05'), ART_05, PAL_05);
+</script>
+
+</body>
+</html>

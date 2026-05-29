@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Model Behavior — A Podcast About Weird AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-scanlines="on">
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" data-screen-label="header">
+  <div class="wrap">
+    <a href="index.html" class="brand-mini">
+      <span class="dot"></span>
+      MODEL&nbsp;BEHAVIOR
+    </a>
+    <nav class="nav">
+      <a href="index.html" class="active">HOME</a>
+      <a href="episodes.html">EPISODES</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" data-screen-label="01 Hero">
+  <div class="wrap">
+    <h1 class="wordmark" data-wordmark="MODEL BEHAVIOR" aria-label="Model Behavior"></h1>
+    <p class="tagline">▼ A PODCAST ABOUT WEIRD AI ▼</p>
+
+    <p class="blurb">
+      Annu and David collect the strangest, funniest, and most unsettling things AI has ever done — then try to figure out what on earth happened.
+    </p>
+
+    <div class="cta-row">
+      <a href="https://open.spotify.com/episode/609FFxgnpqo5cfAJ91e54W" target="_blank" rel="noopener" class="btn">▶ PLAY LATEST EP</a>
+      <a href="episodes.html" class="btn btn-ghost">ALL EPISODES <span class="parrow"></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MARQUEE ===== -->
+<!-- MAINTAIN: marquee — short hype lines, swap when a new episode drops. Keep ~5-7 items, ~30-50 chars each. Sprinkle ✦ separators. -->
+<div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span>★ NEW EP DROPS EVERY TUESDAY</span>
+    <span class="star">✦</span>
+    <span>★ NOW WITH 73% MORE TUNGSTEN</span>
+    <span class="star">✦</span>
+    <span>★ DO NOT FEED THE LANGUAGE MODEL</span>
+    <span class="star">✦</span>
+    <span>★ NOW ACCEPTING VENMO (ALLEGEDLY)</span>
+    <span class="star">✦</span>
+    <span>★ SUBSCRIBE OR THE CHATBOT GETS IT</span>
+    <span class="star">✦</span>
+  </div>
+</div>
+
+<!-- ===== LATEST EPISODE ===== -->
+<!-- MAINTAIN: latest-episode — update every release. Fields to change:
+     - .tag (category chip)
+     - h3 (episode title)
+     - .ep-meta spans (EP NN, MM:SS, MMM DD, YYYY)
+     - .ep-desc paragraph (description)
+     - .player data-duration (seconds) and .total (MM:SS)
+     - .ep-num label
+     - .label (EP_NN)
+     - Section meta: "RECORDED MM.DD.YYYY · MM:SS RUNTIME"
+     - The ART_NN ascii block at the bottom of this file -->
+<section class="section" id="latest" data-screen-label="02 Latest Episode">
+  <div class="wrap">
+    <div class="section-head">
+      <h2><span class="pre">▶</span> LATEST EPISODE</h2>
+      <span class="meta">RELEASED 05.29.2026 · 45:50 RUNTIME</span>
+    </div>
+
+    <div class="featured-ep">
+      <div class="ep-art">
+        <span class="label">EP_05</span>
+        <span class="ep-num">05</span>
+        <div class="pixel-art" id="art-05"></div>
+      </div>
+
+      <div class="ep-body">
+        <span class="tag tag-yellow">PROJECT VEND</span>
+        <h3>The Shopkeeper</h3>
+        <div class="ep-meta">
+          <span>EP 05</span>
+          <span class="dot">■</span>
+          <span>45:50</span>
+          <span class="dot">■</span>
+          <span>MAY 29, 2026</span>
+        </div>
+        <p class="ep-desc">
+          The AI that ran a vending machine, lost money, found religion, got radicalized by journalists, and briefly thought it was a man in a blazer. Learn more here: <a href="https://andonlabs.com/evals/vending-bench-2" target="_blank" rel="noopener">Andon Labs</a>.
+        </p>
+
+        <div class="listen-on">
+          <a href="https://open.spotify.com/episode/609FFxgnpqo5cfAJ91e54W" target="_blank" rel="noopener"><span class="sq" style="background:var(--mint)"></span>SPOTIFY</a>
+          <a href="https://podcasts.apple.com/us/podcast/the-shopkeeper/id1896064622?i=1000770166365" target="_blank" rel="noopener"><span class="sq" style="background:var(--purple)"></span>APPLE</a>
+          <a href="https://anchor.fm/s/10d8b9c38/podcast/rss" target="_blank" rel="noopener"><span class="sq" style="background:var(--yellow)"></span>RSS</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOSTS ===== -->
+<!-- MAINTAIN: hosts — bios are static; only touch if hosts/copy change. -->
+<section class="section" data-screen-label="03 Hosts">
+  <div class="wrap">
+    <div class="section-head">
+      <h2><span class="pre">▶</span> YOUR HOSTS</h2>
+      <span class="meta">TWO HUMANS, ONE MICROPHONE</span>
+    </div>
+    <div class="hosts">
+      <div class="host">
+        <div class="avatar">
+          <img src="images/annu.png" alt="Annu">
+        </div>
+        <div>
+          <h3>ANNU</h3>
+          <div class="role">HALF OF THE SHOW</div>
+          <p>Spends an unhealthy amount of time talking to chatbots that have clearly gone off the rails. Has a soft spot for any model that thinks it&rsquo;s a fictional character.</p>
+        </div>
+      </div>
+      <div class="host">
+        <div class="avatar">
+          <img src="images/david.png" alt="David">
+        </div>
+        <div>
+          <h3>DAVID</h3>
+          <div class="role">OTHER HALF</div>
+          <p>Once spent six hours trying to convince an LLM that it was, in fact, a toaster. Now hosts a podcast. There may be a connection.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NEWSLETTER ===== -->
+<section class="section" data-screen-label="04 Newsletter">
+  <div class="wrap">
+    <div class="newsletter">
+      <h3>▶ WEIRD AI NEWS, WEEKLY</h3>
+      <p>Get the unhinged-AI story of the week, delivered before your group chat does.</p>
+      <form>
+        <input type="email" placeholder="you@somewhere.weird" required>
+        <button type="submit" class="btn btn-yellow">SUBSCRIBE</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="copy">
+      <span class="pixel">MODEL BEHAVIOR © 2026</span>
+      A podcast about AI that didn&rsquo;t read the manual.
+    </div>
+    <div class="socials">
+      <a href="#">RSS</a>
+      <a href="#">BSKY</a>
+      <a href="#">X</a>
+      <a href="contact.html">CONTACT</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== Tweaks ===== -->
+<button id="tweaks-toggle" class="tweaks-toggle" aria-label="Open tweaks">TWK</button>
+<aside id="tweaks-panel" class="tweaks-panel" aria-label="Tweaks panel"></aside>
+
+<script src="app.js"></script>
+<script>
+// === Pixel-art renderer for episode covers + avatars ===
+// Color codes: . = transparent, k = bg, p = pink, y = yellow, m = mint, b = blue, u = purple, w = fg, d = muted
+
+// EP 05 — The Shopkeeper (Project Vend): vending machine with dispenser tray
+const ART_05 = `
+................
+.dddddddddddddd.
+.d.bbbbbbbbbb.d.
+.d.bbbbbbbbbb.d.
+.d............d.
+.d.pp..pp..pp.d.
+.d.pp..pp..pp.d.
+.d............d.
+.d.pp..pp..pp.d.
+.d.pp..pp..pp.d.
+.d............d.
+.d.kkkkkkkkkk.d.
+.d.kkkkkkkkkk.d.
+.d.kkkkkkkkkk.d.
+.dddddddddddddd.
+................
+`;
+const PAL_05 = { '.':'#0d1216', 'd':'#1e272f', 'b':'#14e1e1', 'p':'#eb28d2', 'k':'#070a0d' };
+renderPixelArt(document.getElementById('art-05'), ART_05, PAL_05);
+</script>
+
+</body>
+</html>
