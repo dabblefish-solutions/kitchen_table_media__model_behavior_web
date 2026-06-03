@@ -20,6 +20,9 @@ Find `<!-- MAINTAIN: latest-episode -->` and update:
 - Section meta line: `RELEASED MM.DD.YYYY · MM:SS RUNTIME`
 - Also update the **hero CTA** at the top of the page (`▶ PLAY LATEST EP`) and the **SPOTIFY / APPLE chips** in `.listen-on` to point at the new episode (see "Per-episode platform URLs" below).
 
+### 1b. `index.html` — Podcast structured data (JSON-LD)
+At the bottom of the `<head>`, there's a `<script type="application/ld+json">` with a `PodcastSeries.hasPart` array. Prepend a new `PodcastEpisode` object at the top of that array with `episodeNumber`, `name`, `description`, `datePublished` (`YYYY-MM-DD`), `duration` (ISO 8601: `PT<mins>M<secs>S`), and `url` (Spotify episode link).
+
 ### 2. `index.html` — Ticker / Marquee
 Find `<!-- MAINTAIN: marquee -->` and update the `<span>` items inside `.track`. These are short hype lines that should change when a new episode drops — current ones reference Claudius/tungsten, swap in references to the new episode.
 
