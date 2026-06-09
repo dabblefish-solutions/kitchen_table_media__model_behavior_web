@@ -80,6 +80,25 @@ Strip the trailing `&uo=4` analytics param from each URL.
 
 ---
 
+## One-time: add OG / Twitter image when show artwork is ready
+
+The three pages currently ship without `og:image` / `twitter:image` because there's no canonical show artwork file in the repo yet. When you have one:
+
+1. Drop a 1200×630 (min 600×314) PNG/JPG at `images/og.png`.
+2. In the `<head>` of `index.html`, `episodes.html`, and `contact.html`, add right after the existing `og:url` line:
+   ```html
+   <meta property="og:image" content="https://model-behavior.co/images/og.png">
+   <meta property="og:image:width" content="1200">
+   <meta property="og:image:height" content="630">
+   <meta name="twitter:image" content="https://model-behavior.co/images/og.png">
+   ```
+3. In `index.html`'s JSON-LD block, add an `"image": "https://model-behavior.co/images/og.png"` field to the `PodcastSeries` object (top level, alongside `name`/`description`).
+4. Switch `twitter:card` from `summary_large_image` to... actually leave it — `summary_large_image` is already correct once an image exists.
+
+Validate at: <https://developers.facebook.com/tools/debug/> and <https://cards-dev.twitter.com/validator>.
+
+---
+
 ## Other periodic updates
 
 ### Stats on `contact.html`
